@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.abhi.gk"
+    android:versionCode="6"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.abhi.gk.UserPreferenceSetting"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.abhi.gk.Test_questions"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_test_questions" >
+        </activity>
+        <activity
+            android:name="com.abhi.gk.PracticeActivity"
+            android:label="@string/title_activity_practice" >
+        </activity>
+        <activity
+            android:name="com.abhi.gk.ViewScore"
+            android:label="@string/title_activity_view_score" >
+        </activity>
+        <activity
+            android:name="com.abhi.gk.ViewAnswers"
+            android:label="@string/title_activity_view_answers" >
+        </activity>
+        <activity
+            android:name="com.abhi.gk.Description"
+            android:label="@string/title_activity_description" >
+        </activity>
+        <activity
+            android:name="com.abhi.gk.Splashstart"
+            android:label="@string/title_activity_splashstart"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.abhi.gk.UserSettingActivity" />
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+
+</manifest>

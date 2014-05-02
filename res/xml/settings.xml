@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/pref_quiz_settings" >
+        <EditTextPreference
+            android:defaultValue="10"
+            android:inputType="number"
+            android:key="numOfQuestion"
+            android:summary="@string/pref_num_questions_summary"
+            android:title="@string/number_of_question" />
+
+        <ListPreference
+            android:defaultValue="all"
+            android:entries="@array/selectCategory"
+            android:entryValues="@array/selectCategoryValues"
+            android:key="prefcategory"
+            android:summary="@string/pref_category_summary"
+            android:title="@string/pref_category" />
+
+        <EditTextPreference
+            android:defaultValue="coming soon"
+            android:inputType="number"
+            android:key="timer"
+            android:summary="@string/timer_summary"
+            android:title="@string/timer" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefSyncQuestion"
+            android:summary="regularly sync latest general knpwledge questions"
+            android:title="Sync Latest GK questions" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+
+    <!--
+         <PreferenceCategory android:title="@string/practice_questions_setting" android:key="practice1">
+
+        <CheckBoxPreference
+           android:key="practice_set1"
+           android:defaultValue="false"
+            android:title="practice_set1" >
+        </CheckBoxPreference>
+        
+        <CheckBoxPreference
+           android:key="practice_set2"
+           android:defaultValue="false"
+            android:title="practice_set2" >
+        </CheckBoxPreference>
+        </PreferenceCategory>
+    -->
+    <!--
+         <Button android:text="This is a button on top of all preferences."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    -->
+    <!--
+         <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:title="Sync Latest GK Question" 
+        android:summary="select category of questions">
+        
+        <PreferenceCategory android:title="@string/prefsyncquestions" >
+
+        <CheckBoxPreference
+           android:key="all"
+           android:defaultValue="true"
+            android:title="Politics" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="politics"
+            android:title="Politics" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="economics"
+            android:title="Economics" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="science"
+            android:title="Science" >
+        </CheckBoxPreference>
+        
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="geography"
+            android:title="Geography" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="history"
+            android:title="History" >
+        </CheckBoxPreference>
+        </PreferenceCategory>
+        </PreferenceScreen>
+    -->
+
+</PreferenceScreen>
